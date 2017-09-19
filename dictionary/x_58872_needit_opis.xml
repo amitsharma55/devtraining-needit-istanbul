@@ -12,10 +12,10 @@
         <element label="Product Owner" max_length="32" name="u_product_owner" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Product Status" max_length="40" name="u_product_status" type="string">
             <choice>
-                <element label="Available For Order" sequence="0" value="1"/>
-                <element label="Unavailable For Order" sequence="1" value="2"/>
-                <element label="De-Install Only" sequence="2" value="3"/>
-                <element label="Archived" sequence="3" value="4"/>
+                <element label="Unavailable For Order" sequence="3" value="2"/>
+                <element label="Available For Order" sequence="4" value="1"/>
+                <element label="De-Install Only" sequence="5" value="3"/>
+                <element label="Archived" sequence="6" value="4"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Product Type" max_length="40" name="u_product_type" type="string">
