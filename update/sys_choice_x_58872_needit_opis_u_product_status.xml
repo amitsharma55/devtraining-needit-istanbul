@@ -9,15 +9,15 @@
             <label>Unavailable For Order</label>
             <language>en</language>
             <name>x_58872_needit_opis</name>
-            <sequence>3</sequence>
+            <sequence>0</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-09-18 03:25:47</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d96988110f5143003d4545ace1050ee6</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-19 02:26:48</sys_updated_on>
+            <sys_updated_on>2017-09-19 02:30:13</sys_updated_on>
             <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -28,15 +28,15 @@
             <label>Available For Order</label>
             <language>en</language>
             <name>x_58872_needit_opis</name>
-            <sequence>4</sequence>
+            <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-09-18 03:25:47</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1d6988110f5143003d4545ace1050ee4</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-19 02:26:48</sys_updated_on>
+            <sys_updated_on>2017-09-19 02:30:13</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -47,15 +47,15 @@
             <label>De-Install Only</label>
             <language>en</language>
             <name>x_58872_needit_opis</name>
-            <sequence>5</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-09-18 03:25:47</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>956988110f5143003d4545ace1050ee8</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-19 02:26:48</sys_updated_on>
+            <sys_updated_on>2017-09-19 02:30:13</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -66,16 +66,73 @@
             <label>Archived</label>
             <language>en</language>
             <name>x_58872_needit_opis</name>
-            <sequence>6</sequence>
+            <sequence>3</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-09-18 03:25:47</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>516988110f5143003d4545ace1050eea</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-19 02:26:48</sys_updated_on>
+            <sys_updated_on>2017-09-19 02:30:13</sys_updated_on>
             <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_product_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_58872_needit_opis</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-19 02:31:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c76cd610f1103003d4545ace1050e18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-19 02:31:00</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_product_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending With Manager</label>
+            <language>en</language>
+            <name>x_58872_needit_opis</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-19 02:32:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b8b601a10f1103003d4545ace1050e6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-19 02:32:06</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_product_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending with HW SW</label>
+            <language>en</language>
+            <name>x_58872_needit_opis</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-19 02:32:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74b601a10f1103003d4545ace1050e70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-19 02:32:06</sys_updated_on>
+            <value>7</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_product_status</element>
@@ -85,7 +142,7 @@
             <sys_created_on>2017-09-18 03:25:47</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>956988110f5143003d4545ace1050ee6</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>u_product_status</sys_name>
             <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
             <sys_policy/>
@@ -93,7 +150,7 @@
             <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
             <sys_update_name>sys_choice_x_58872_needit_opis_u_product_status</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-19 02:26:48</sys_updated_on>
+            <sys_updated_on>2017-09-19 02:32:06</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>
