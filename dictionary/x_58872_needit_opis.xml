@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="OPIS" max_length="40" name="x_58872_needit_opis" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" default="2" label="Available" max_length="40" name="u_available" read_only="true" type="string">
+    <element extends="task" label="OPIS" max_length="40" name="x_58872_needit_opis" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Available" max_length="40" name="u_available" read_only="true" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="1"/>
                 <element label="No" sequence="1" value="2"/>
@@ -10,7 +10,17 @@
         <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="u_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="OPIS Code" max_length="40" name="u_opiscode" read_only="true" type="string"/>
         <element label="Product Owner" max_length="32" name="u_product_owner" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Product Status" max_length="40" name="u_product_status" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="5" label="Product Status" max_length="40" name="u_product_status" read_only="true" type="string">
+            <choice>
+                <element label="Unavailable For Order" sequence="0" value="2"/>
+                <element label="Available For Order" sequence="1" value="1"/>
+                <element label="De-Install Only" sequence="2" value="3"/>
+                <element label="Archived" sequence="3" value="4"/>
+                <element label="Draft" sequence="4" value="5"/>
+                <element label="Pending With Manager" sequence="5" value="6"/>
+                <element label="Pending with OPIS Group" sequence="6" value="7"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Product Type" mandatory="true" max_length="40" name="u_product_type" type="string">
             <choice>
                 <element label="Software" sequence="0" value="1"/>
