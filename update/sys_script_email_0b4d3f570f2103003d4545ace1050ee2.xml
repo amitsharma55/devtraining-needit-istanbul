@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>request.itil.approve.role_script_1</name>
+        <new_lines_to_html>true</new_lines_to_html>
+        <script><![CDATA[template.print("Summary of Requested items:\n");  
+  var item = new GlideRecord("sc_req_item");
+  item.addQuery("request", current.sysapproval);
+  item.query();
+  while(item.next()) {
+      template.print(item.number + ":  " + item.quantity + " X " + item.cat_item.getDisplayValue() + " at " + item.price.getDisplayValue() + " each \n");
+      template.print("    Options:\n");
+      var keys = new Array();
+      var set = new GlideappVariablePoolQuestionSet();	
+      set.setRequestID(item.sys_id);
+      set.load();
+      var vs = set.getFlatQuestions();
+      for (var i=0; i < vs.size(); i++) {
+        if(vs.get(i).getLabel() != '') {
+           template.space(4);
+           template.print('     ' +  vs.get(i).getLabel() + " = " + vs.get(i).getDisplayValue() + "\n");  
+        }
+      }
+  }]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-07 12:34:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0b4d3f570f2103003d4545ace1050ee2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>request.itil.approve.role_script_1</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_email_0b4d3f570f2103003d4545ace1050ee2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-07 12:34:57</sys_updated_on>
+    </sys_script_email>
+</record_update>

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="OPIS" max_length="40" name="x_58872_needit_opis" sizeclass="14" type="collection">
+    <element extends="task" label="OPIS" max_length="40" name="x_58872_needit_opis" sizeclass="20" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="3" default="2" label="Available" max_length="40" name="u_available" read_only="true" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="1"/>
                 <element label="No" sequence="1" value="2"/>
             </choice>
         </element>
+        <element dependent="opened_by" dependent_on_field="opened_by" label="Manager" mandatory="true" max_length="32" name="u_manager" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element label="Manager" mandatory="true" max_length="32" name="u_manager_name" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="u_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="OPIS Code" max_length="40" name="u_opiscode" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="OPIS Code" max_length="40" name="u_opiscode" type="string"/>
         <element label="Price" max_length="40" name="u_proce" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Product Kind" mandatory="true" max_length="40" name="u_product_kind" type="string">
             <choice>

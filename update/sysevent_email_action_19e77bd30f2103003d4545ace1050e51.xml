@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>x_58872_needit_opis</collection>
+        <condition table="x_58872_needit_opis">u_product_status=6^EQ<item endquery="false" field="u_product_status" goto="false" newquery="false" operator="=" or="false" value="6"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name>approval.cancelled</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><strong class="ph b" style="color: #333333; margin: 0px; text-align: left;">Dear ${u_manager_name}<br /></strong></p>
+<p><strong class="ph b" style="color: #333333; margin: 0px; text-align: left;"><strong class="ph b">An OPIS product request is assigned for your approval:</strong></strong></p>
+<p><strong class="ph b" style="color: #333333; margin: 0px; text-align: left;"><strong class="ph b">Number: ${number}</strong></strong></p>
+<p><strong class="ph b" style="color: #333333; margin: 0px; text-align: left;">Please complete this task as soon as possible.</strong>&nbsp;</p>
+<p><strong class="ph b" style="color: #333333; margin: 0px; text-align: left;">Click here to view the OPIS request: ${URI_REF}</strong><span style="color: #333333; text-align: left;">.</span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>OPIS Manager Approval Notification</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>u_manager_name</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>OPIS Product Request: ${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-07 12:17:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19e77bd30f2103003d4545ace1050e51</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>OPIS Manager Approval Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysevent_email_action_19e77bd30f2103003d4545ace1050e51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-07 12:48:46</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
